@@ -1,0 +1,292 @@
+html,
+body {
+  /* The html and body elements cannot have any padding or margin. */
+  height: 100%;
+}
+
+/* Update twitter bootstrap width to allow larger screen display */
+.container {
+  width: 960px;
+}
+
+#bkg-image {
+  position: absolute;
+  z-index: -100;
+  background-image: url('/img/smiling-girl.jpg');
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  -moz-background-size:100% 100%; /* Firefox 3.6 */
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+
+#home-page-text {
+  margin-top: 175px;
+  font-size: 2.2em;
+  font-family: 'Times New Roman', sans-serif;
+  text-align: left;
+  /* color: #333; */
+  color: #eee;
+  text-shadow: 1px 1px #333;
+  line-height: 1.1em;
+}
+
+#home-page-buttons {
+  position:absolute;
+  margin-top:35px;
+}
+
+.home-page-benefits {
+  position:absolute;
+  margin-top:120px;
+}
+
+#benefit-box-loans, 
+#benefit-box-cash,
+#benefit-box-workforce {
+  position:absolute;
+  z-index: 2;
+  top: 0px;
+  width: 304px;
+  height: 280px;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  background-color: #fff;
+  -moz-border-radius:     5px;
+  -webkit-border-radius:  5px;
+  border-radius:          5px;
+}
+
+#benefit-box-loans {
+  left: 0px;
+}
+
+#benefit-box-cash {
+  left: 318px;
+}
+
+#benefit-box-workforce {
+  left: 636px;
+}
+
+.benefit-box-icon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.benefit-box-icon img {
+  width: 75px;
+  height: 75px;
+}
+
+.benefit-text {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.benefit-description {
+  margin-top: 15px;
+  width: 99%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.benefit-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent body by the height of the footer plus header as well */
+  margin: -50px auto -33px;
+}
+
+#logo-image {
+  padding: 10px;
+}
+
+#logo-text {
+  position:absolute;
+  margin-top: -40px;
+  margin-left: 62px;
+  font-size: 2em;
+  font-family: sans-serif;
+  text-align: left;
+  color: #333;
+}
+
+#logo-background {
+  position:absolute;
+  z-index:2;
+  margin-left: 30px;
+  width: 180px;
+  height: 65px;
+  background: white;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#banner-background {
+  position:relative;
+  z-index:1;
+  width: 100%;
+  height: 50px;
+  background: rgb(173,187,204);
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.shadow {
+  /*
+  -webkit-box-shadow:  3px 3px 3px 3px rgba(70, 70, 70, 0.7);      
+  box-shadow:  3px 3px 3px 3px rgba(70, 70, 70, 0.7);
+  */
+  -webkit-box-shadow:  2px 2px rgba(70, 70, 70, 0.7);      
+  box-shadow:  2px 2px rgba(70, 70, 70, 0.7);
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 33px;
+}
+#footer {
+  position: relative;
+  z-index: 1;
+}
+#footer ul {
+  list-style: none;
+}
+
+#footer .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  /* background: #444; */
+  width: 100%;
+  height: 100%;
+}
+
+.footer-copy {
+  margin-top: 7px;
+  float: left;
+  color: #444;
+/*  color: #bbb; */
+}
+
+#footer .color-gradient {
+  position: absolute;
+  z-index: 1;
+  top: -150px;
+  width: 100%;
+  height: 150px;
+  background: -moz-linear-gradient(top,  rgba(254,255,255,0.4) 12%, rgba(255,255,255,0.4) 25%, rgba(255,255,255,0.68) 40%, rgba(255,255,255,1) 57%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(254,255,255,0.4)), color-stop(25%,rgba(255,255,255,0.4)), color-stop(40%,rgba(255,255,255,0.68)), color-stop(57%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(254,255,255,0.4) 12%,rgba(255,255,255,0.4) 25%,rgba(255,255,255,0.68) 40%,rgba(255,255,255,1) 57%);
+  background: -o-linear-gradient(top,  rgba(254,255,255,0.4) 12%,rgba(255,255,255,0.4) 25%,rgba(255,255,255,0.68) 40%,rgba(255,255,255,1) 57%);
+  background: -ms-linear-gradient(top,  rgba(254,255,255,0.4) 12%,rgba(255,255,255,0.4) 25%,rgba(255,255,255,0.68) 40%,rgba(255,255,255,1) 57%);
+  background: linear-gradient(to bottom,  rgba(254,255,255,0.4) 12%,rgba(255,255,255,0.4) 25%,rgba(255,255,255,0.68) 40%,rgba(255,255,255,1) 57%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66feffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+
+.menu {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.menu ul {
+  float: right;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu ul li {
+  display: inline;
+  float: left;
+  margin-left: 25px;
+  font-size: 1.2em;
+/*  font-weight: bold; */
+}
+
+.menu ul li a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 7px;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.rounded-box {
+  -moz-border-radius:     10px;
+  -webkit-border-radius:  10px;
+  border-radius:          10px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: sans-serif;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #eee;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
